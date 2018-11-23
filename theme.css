@@ -1,0 +1,73 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+	width: 100%;
+	height: 100%;
+	color: black;
+	background: linear-gradient(37deg, #2980B9, #6DD5FA, #FFFFFF, #91eae4, #86A8E7, #7F7FD5);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+.button {
+  width: 50%;
+  height: 100%;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  text-align: center;
+  color: darkblue;
+  background-color: white;
+  display: inline-block;
+  transition: all .2s;
+  transition-timing-function: ease-in-out;
+}
+.button:hover{
+  transform: scale(1.02);
+  border: 2px solid gold;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
