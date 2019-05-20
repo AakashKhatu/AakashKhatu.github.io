@@ -12,14 +12,17 @@
     text-align: left;
 }
 .sub{
+  font-size: medium;
   margin-left: 2%;
   color: gray;
 }
 body{
+	line-height: 150%;
   margin-left: 5%;
   margin-right: 5%
 }
 li{
+  font-size: large;
   transition: transform .2s;
   transition-timing-function: ease-in-out;
   transform-origin: center;
@@ -28,23 +31,25 @@ li:hover{
   transform: scale(1.02);
 }
 
-.hide .contact {
-  opacity: 0;
-  width: 100%;
-  display: block;
-  height: 0px;
-  text-align: left;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
+b{
+  color: dark-grey;
 }
-.hide input[type="checkbox"]:checked + .contact {
-  height: 200px;
-  display: table;
-  opacity: 100;
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    li{
+        page-break-inside: avoid;
+    }
+    ul {
+      page-break-before: avoid;
+    }
 }
-input{
-  width: auto;
-}
-#item-3{
-  display: none;
+
+.print-button{
+  color: darkblue;
+  cursor: pointer;
 }
