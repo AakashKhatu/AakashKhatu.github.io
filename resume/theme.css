@@ -1,10 +1,12 @@
 .name{
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  font-size: large;
 }
 .contact{
   font-family: 'Raleway', sans-serif;
   font-size: large;
+  line-height: 1.5em;
   text-align: center;
 }
 .text{
@@ -52,4 +54,10 @@ b{
 .print-button{
   color: darkblue;
   cursor: pointer;
+}
+
+@media print{
+	.brk{
+		page-break-before: always;
+	}
 }
