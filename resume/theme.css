@@ -65,6 +65,11 @@ b{
   cursor: pointer;
 }
 
+.skill .entry{
+  display: inline-block;
+  vertical-align: top;
+}
+
 @media print{
 	.brk{
 		page-break-before: always;
