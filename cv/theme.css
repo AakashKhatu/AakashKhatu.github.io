@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+  }
+.name{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: large;
+}
+.contact{
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  line-height: 1.5em;
+  text-align: center;
+}
+.text{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+.sub{
+  font-size: medium;
+  margin-left: 2%;
+  color: gray;
+}
+
+.sub li{
+    font-size: medium;
+    color: gray;
+  }
+
+body{
+	line-height: 150%;
+  margin-left: 5%;
+  margin-right: 5%
+}
+li{
+  font-size: large;
+  transition: transform .2s;
+  transition-timing-function: ease-in-out;
+  transform-origin: center;
+}
+li:hover{
+  transform: scale(1.02);
+}
+
+b{
+  color: dark-grey;
+}
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    li{
+        page-break-inside: avoid;
+    }
+    ul {
+      page-break-before: avoid;
+    }
+}
+
+.print-button{
+  color: darkblue;
+  cursor: pointer;
+}
+
+.skill .entry{
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media print{
+	.brk{
+		page-break-before: always;
+	}
+}
